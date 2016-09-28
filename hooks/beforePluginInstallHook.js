@@ -5,7 +5,8 @@ It will check all necessary module dependencies and install the missing ones loc
 
 var path = require('path');
 var fs = require('fs');
-var spawnSync = require('child_process').spawnSync;
+// var spawnSync = require('child_process').spawnSync;
+var spawnSync = require('spawn-sync');
 var pluginNpmDependencies = require('../package.json').dependencies;
 var INSTALLATION_FLAG_FILE_NAME = '.npmInstalled';
 
